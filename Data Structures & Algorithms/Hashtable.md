@@ -3,7 +3,7 @@
 
 <hr>
 
-## [:memo:**Hash table**]
+## :memo: Data Structures & Algorithms :black_nib:
 
 ### 哈希表能解决什么问题？一般什么时候想到使用哈希表?
 
@@ -13,6 +13,8 @@
 2. 快速插入和删除: 需要频繁地进行数据的插入和删除操作 >> 哈希表在插入和删除操作上也有常数时间复杂度
 3. 键值对存储：需要将数据以键值对的形式存储和访问 >> std::unordered_map 提供了高效的键值对存储机制
 4. 数据去重：需要检查并确保数据集合中的元素唯一 >> 可以快速去除重复元素，保持集合中的元素唯一性
+
+### 在C++中,常见的数据结构 >> 数组 set map
 
 <img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img.png" alt="img" style="float: left;" />
 <img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img_1.png" alt="img" style="float: left;" />
