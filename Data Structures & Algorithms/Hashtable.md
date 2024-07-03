@@ -25,7 +25,8 @@
    * ====================================
    * std::unordered_map<std::string, int> wordCount; // 创建一个unordered_map，KEY键为std::string类型，VALUE值为int类型
    * wordCount["apple"] = 2; wordCount["banana"] = 3; wordCount["orange"] = 5; // 插入一些键值对
-   * std::string key = "apple"; if (wordCount.find(key) != wordCount.end()) {} // 查找一个键的值
+   * std::string key = "apple"; 
+   * if (wordCount.find(key) != wordCount.end()) {} // 查找一个键的值
    * ====================================
 4. 数据去重：需要检查并确保数据集合中的元素唯一 
    * std::unordered_set 可以快速去除重复元素，保持集合中的元素唯一性
@@ -37,5 +38,7 @@
 5. 频率统计：需要统计元素出现的频率，例如统计单词出现的次数
    * 键为元素，值为出现次数，可以高效地完成频率统计
    * ====================================
-   *  for (char ch : text) { if (ch != ' ') frequency[ch]++; } // 遍历字符串，统计每个字符的出现次数
+   * for (char ch : text) { 
+   * if (ch != ' ') frequency[ch]++; // 遍历字符串，统计每个字符的出现次数
+   * } 
    * ====================================
