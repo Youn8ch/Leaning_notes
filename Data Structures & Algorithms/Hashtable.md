@@ -57,7 +57,7 @@ if (wordCount.find(key) != wordCount.end()) {
 5. 频率统计：需要统计元素出现的频率，例如统计单词出现的次数
    * 键为元素，值为出现次数，可以高效地完成频率统计
 ```cpp
-   * for (char ch : text) { 
-   * if (ch != ' ') frequency[ch]++; // 遍历字符串，统计每个字符的出现次数
-   * } 
+    for (char ch : text) { 
+         if (ch != ' ') frequency[ch]++; // 遍历字符串，统计每个字符的出现次数
+    } 
 ```
