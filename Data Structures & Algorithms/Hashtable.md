@@ -10,7 +10,16 @@
 ### 在C++中,常见的数据结构 >> 数组 set map，其底层实现以及优劣如下表所示：
 
 <img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img.png" alt="img" style="float: left;" />
+   
+   * 需要保证元素唯一性时使用 std::set 或 std::unordered_set
+   * 允许元素重复但需要保持顺序时使用 std::multiset
+   * 不关心顺序，但需要高效查找、插入和删除时使用 std::unordered_set
+
 <img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img_1.png" alt="img" style="float: left;" />
+
+   * 需要键值对按键排序且键唯一时使用 std::map
+   * 需要键值对按键排序但允许键重复时使用 std::multimap
+   * 不关心键顺序，但需要高效查找、插入和删除时使用 std::unordered_map
 
 ### 哈希表能解决什么问题？一般什么时候想到使用哈希表?
 
