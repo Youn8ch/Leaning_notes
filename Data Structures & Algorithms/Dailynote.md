@@ -9,13 +9,13 @@
 
 ### 在C++中, 常见的数据结构 >> 数组 set map, 其底层实现以及优劣如下表所示：
 
-<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img.png" alt="img" style="float: left;" />
+<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/Img/img.png" alt="img" style="float: left;" />
    
    * 需要保证元素唯一性时使用 std::set 或 std::unordered_set
    * 允许元素重复但需要保持顺序时使用 std::multiset
    * 不关心顺序, 但需要高效查找、插入和删除时使用 std::unordered_set
 
-<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img_1.png" alt="img" style="float: left;" />
+<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/Img/img_1.png" alt="img" style="float: left;" />
 
    * 需要键值对按键排序且键唯一时使用 std::map
    * 需要键值对按键排序但允许键重复时使用 std::multimap
@@ -68,12 +68,12 @@ if (wordCount.find(key) != wordCount.end()) {
 
 ### Leetcode 15 三数之和
 
-<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img_2.png" alt="img" style="float: left;" />
-<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/imgsource/img_3.png" alt="img" style="float: left;" />
+<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/Img/img_2.png" alt="img" style="float: left;" />
+<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/Img/img_3.png" alt="img" style="float: left;" />
 
 ### 思路 ：常规 哈希表
 
-比方说a+b+c=0, 两层for循环就确定 a 和 b 的数值, 可以使用哈希法来确定 0-(a+b) 是否在数组里出现过。
+比方说a+b+c=0, 两层for循环就确定 a 和 b 的数值, [Dailynote.md](Dailynote.md)可以使用哈希法来确定 0-(a+b) 是否在数组里出现过。
 
 但是有一个问题, 题目要求**不可以包含重复的三元组**
 
