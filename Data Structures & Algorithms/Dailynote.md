@@ -134,3 +134,51 @@ if (wordCount.find(key) != wordCount.end()) {
         }
         return ans;
 ```
+
+<hr>
+
+# :memo: 240706 
+
+### 回溯算法 模版三部曲
+
+1. 回溯函数模板返回值以及参数
+```cpp
+void backtracking(参数)
+```
+2. 回溯函数终止条件
+```cpp
+if (终止条件) {
+    存放结果;
+    return;
+}
+```
+3. 回溯搜索的遍历过程
+   * 回溯法一般是在集合中递归搜索，集合的大小构成了树的宽度，递归的深度构成的树的深度
+<img src="https://github.com/Youn8ch/Leaning_notes/blob/master/Img/img_4.png" alt="img" style="float: left;" />
+
+举例集合大小和孩子的数量是相等的, 回溯函数遍历过程伪代码如下：
+
+```cpp
+for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+    处理节点;
+    backtracking(路径，选择列表); // 递归
+    回溯，撤销处理结果
+}
+```
+
+for循环可以理解是横向遍历，backtracking（递归）就是纵向遍历，这样就把这棵树全遍历完， 搜索叶子节点就是找的其中一个结果：
+
+```cpp
+void backtracking(参数) {
+    if (终止条件) {
+        存放结果;
+        return;
+    }
+
+    for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+        处理节点;
+        backtracking(路径，选择列表); // 递归
+        回溯，撤销处理结果
+    }
+}
+```
